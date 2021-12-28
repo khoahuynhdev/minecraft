@@ -7,6 +7,6 @@ DOCKER_FILE ?= docker-compose.yml
 up:
 	docker-compose -f $(DOCKER_FILE) up -d --remove-orphans
 down:
-	docker-compose -f $(DOCKER_FILE) down
+	docker-compose -f $(DOCKER_FILE) down --force-recreate
 ps:
 	docker-compose -f $(DOCKER_FILE) ps

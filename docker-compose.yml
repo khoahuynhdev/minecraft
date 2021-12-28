@@ -8,6 +8,11 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: "PAPER"
+      ONLINE_MODE: "FALSE"
+      SERVER_NAME: "LittleSaiGon"
+      SEED: "-2895465341997673906"
+      DIFFICULTY: "normal"
+      VIEW_DISTANCE: "8"
     tty: true
     stdin_open: true
     restart: unless-stopped
